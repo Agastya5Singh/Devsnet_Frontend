@@ -1,0 +1,16 @@
+.res-size{
+    border:5px solid #999;
+    eidth: 700px;
+    height: 800px;
+  }
+  
+    .res-line{
+    background colour:black;
+    height:700px;
+    border-right:2px solid black;
+    margin-top:50px;
+    margin-right:620px;
+  }
+  .right{
+    transform: translate(650px,-540px);
+  }
