@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top right, #ffff00 0%, #6666ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.b {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+.y {
+  display: grid;
+  width: 90%;
+  height: 80%;
+  grid-template-columns: repeat(6, 1fr);
+}
+.x {
+  width: 100px;
+  height: 100px;
+  background: rgb(19, 180, 67);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.x:hover {
+  cursor: pointer;
+  background: rgb(12, 180, 138);
+  border-radius: 10px;
+}
+.booked,
+.x {
+  height: 100px;
+  width: 100px;
+}
+.booked {
+  background: #0eb1a9;
+  border-radius: 10px;
+}
+.booked:hover {
+  cursor: pointer;
+  background: rgb(7, 226, 153);
+  border-radius: 10px;
+}
