@@ -1,36 +1,211 @@
-.circle{
-    position: absolute;
-    top: 50px;
-    left: 450px;
-    transform: traslate(50px,-50px);
-    width:300px;
-      height:300px;
-    border: 20px solid red;
-    border-radius: 500px;
-    
-  }
-  .hour{
-   background colour:black;
-      height:120px;
-      border-right:2px solid black;
-      margin-top:30px;
-      margin-right:147px;
-    
-  }
-  .min{
-    background colour:black;
-    height:2px;
-    width:150px;
-    border-right:120px solid black;
-    margin-top:0px;
-    margin-right:170px;
-  }
-  .sec{
-    background colour: black;
-    height:90px;
-      border-right:2px solid black;
-      margin-top:-68px;
-      margin-right:155px;
-     margin-left:-29px;
-     transform: rotate(40deg);
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "exo 2", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+}
+
+.clock {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 250px;
+  border: 5px solid
+    linear-gradient(
+      to right top,
+      #d16ba5,
+      #c777b9,
+      #ba83ca,
+      #aa8fd8,
+      #9a9ae1,
+      #8aa7ec,
+      #79b3f4,
+      #69bff8,
+      #52cffe,
+      #41dfff,
+      #46eefa,
+      #5ffbf1
+    );
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.clock:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.num {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 18px;
+}
+
+.num1 {
+  transform: rotate(30deg);
+}
+.num1 div {
+  transform: rotate(-30deg);
+}
+
+.num2 {
+  transform: rotate(60deg);
+}
+.num2 div {
+  transform: rotate(-60deg);
+}
+
+.num3 {
+  transform: rotate(90deg);
+}
+.num3 div {
+  transform: rotate(-90deg);
+}
+
+.num4 {
+  transform: rotate(120deg);
+}
+.num4 div {
+  transform: rotate(-120deg);
+}
+
+.num5 {
+  transform: rotate(150deg);
+}
+.num5 div {
+  transform: rotate(-150deg);
+}
+
+.num6 {
+  transform: rotate(180deg);
+}
+.num6 div {
+  transform: rotate(-180deg);
+}
+
+.num7 {
+  transform: rotate(210deg);
+}
+.num7 div {
+  transform: rotate(-210deg);
+}
+
+.num8 {
+  transform: rotate(240deg);
+}
+.num8 div {
+  transform: rotate(-240deg);
+}
+
+.num9 {
+  transform: rotate(270deg);
+}
+.num9 div {
+  transform: rotate(-270deg);
+}
+
+.num10 {
+  transform: rotate(300deg);
+}
+.num10 div {
+  transform: rotate(-300deg);
+}
+
+.num11 {
+  transform: rotate(330deg);
+}
+.num11 div {
+  transform: rotate(-330deg);
+}
+
+.hand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hand div {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+}
+
+.sec {
+  width: 1.5px;
+  height: 38%;
+}
+
+.min {
+  height: 35%;
+  width: 3px;
+  border-radius: 2px;
+}
+
+.hour {
+  height: 27%;
+  width: 6px;
+  border-radius: 4px;
+}
