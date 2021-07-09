@@ -1,0 +1,57 @@
+.row {
+  text-align: center;
+}
+.card {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.card.done{
+  cursor: default;
+}
+.card.done.hover{
+  cursor: default;
+  box-shadow: none;
+}
+.card:hover {
+  box-shadow: inset 0px 0px 0px 1px rgb(53, 79, 94);
+  box-sizing: border-box;
+}
+
+.A {
+  background-image: url("https://th.bing.com/th/id/OIP.auTqjC8uC7pJFkxAfMUUzAHaHS?w=203&h=199&c=7&o=5&dpr=1.5&pid=1.7");
+  background-size: cover;
+}
+.B {
+  background-image: url("https://th.bing.com/th/id/OIP.-WO3Rtl9LwzaMW_R1kHJcAEsEs?w=200&h=200&c=7&o=5&dpr=1.5&pid=1.7");
+  background-size: cover;
+}
+.C {
+  background-image: url("https://th.bing.com/th/id/OIP.qj4XpJkCiZGZoUexW1_D5gHaHc?w=194&h=195&c=7&o=5&dpr=1.5&pid=1.7");
+  background-size: cover;
+}
+.D {
+  background-image: url("https://th.bing.com/th/id/OIP.9bsY8EGNxxvIXiRJRdvgGAHaHw?w=204&h=213&c=7&o=5&dpr=1.5&pid=1.7");
+  background-size: cover;
+}
+.E {
+  background-image: url("https://th.bing.com/th/id/OIP.aBeVdq_5kLW1zhVmDd7-SwHaHa?w=186&h=185&c=7&o=5&dpr=1.5&pid=1.7");
+  background-size: cover;
+}
+.F {
+  background-image: url("https://th.bing.com/th/id/OIP.aKNANkVWogFOM6wQA0hl3gHaHv?w=194&h=203&c=7&o=5&dpr=1.5&pid=1.7");
+  background-size: cover;
+}
+.G {
+  background-image: url("https://th.bing.com/th/id/OIP.Ztrd7AoKwDs2PYKUUIh6DQHaGH?w=236&h=195&c=7&o=5&dpr=1.5&pid=1.7");
+  background-size: cover;
+}
+.H {
+  background-image: url("https://th.bing.com/th/id/OIP.dwrLm-8vXEpBcL3lMdi3PQHaGT?w=227&h=194&c=7&o=5&dpr=1.5&pid=1.7");
+  background-size: cover;
+}
+.image-hidden {
+  background-image: url("https://th.bing.com/th/id/OIP.fPQkYUHZLetxOfjl4uil9QHaHa?pid=ImgDet&rs=1");
+}
